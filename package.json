@@ -1,0 +1,20 @@
+{
+  "name": "project-tech",
+  "version": "1.0.0",
+  "description": "This is a projecttech assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "camelcase index.js",
+    "precompress": "{{ executes BEFORE the `compress` script }}",
+    "compress": "{{ run command to compress files }}",
+    "postcompress": "{{ executes AFTER `compress` script }}"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "camelcase": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
