@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+
+    <%- include('includes/head'); -%>
+
 </head>
 <body>
-    <h1>welkom op het profiel van <%= person %></h1>
-    <p><strong>Leeftijd: </strong> <%= data.age %></p>
-    <p><strong>Baan: </strong> <%= data.job %></p>
+
+    <%- include('includes/header'); -%>
+
+<h1>Kies een klusser</h1>
+
+<h3>Hier zijn de klussers die aan jouw criteria voldoen</h3>
+
+<button class="filter">Filter</button>
+
+<article>
+  <h1 id="naampersoon"></h1>
+  <h3 id="gender"></h3>
+  <p id="nationaal"></p>
+  <p><button class="contact">Bekijk profiel</button></p>
+</article>
+
+    <%- include('includes/footer'); -%>
+    
 </body>
+
+<script src="dinges.js"></script>
+
 </html>

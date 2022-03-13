@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+<title>Klusser find</title>
+
+<%- include('includes/head'); -%>
+
+</head>
+
+<body>
+<%- include('includes/header'); -%>
+
+  <br>
+
+  <h3 id="voorkeur">Vul hier voorkeuren in voor klussers</h3>
+
+  <div class="line"></div>
+
+  <br>
+
+<form action="profile">
+
+  <label> Welk vakgebied: </label>
+
+  <input type="text" placeholder="Bijv: Schilder" required/>
+  
+  <label> Nationaliteit: </label>
+
+  <input type="text" placeholder="Bijv: Duitsland" required/>
+
+  <label> Gender: </label>
+
+  <select id="Gender" required>
+
+    <option value="geen">-</option>
+    <option value="man">Man</option>
+    <option value="vrouw">Vrouw</option>
+    <option value="Attackhelicopter">Attackhelicopter</option>
+
+  </select>
+
+  <label> Hoe lang duurt de klus: </label>
+
+  <input type="text" placeholder="Bijv: 1 week ongeveer" required/>
+
+  <button> zoeken </button>
+
+</form>
+
+  <%- include('includes/footer'); -%>
+    
+</body>
+
+<script src="dinges.js"></script>
+
+</html>

@@ -1,3 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
 body {
-    background-color: aqua;
+    background-color: #ededed;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+/* Navigatie */
+
+nav {
+    background-color: #2b78d6;
+    font-family: sans-serif;
+}
+
+nav p {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: red;
+    font-weight: lighter;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 15px 20px;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+}
+
+/* navigatie eind */
+
+/* form pagina */
+
+#voorkeur{
+    padding-left: 10px;
+}
+
+.line{
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 80%;
+    height: 3px;
+    background-color: #000;
+}
+
+form {
+    margin: auto;
+    max-width: 95%;
+    box-shadow: 10px 5px 11px 3px rgba(0, 0, 0, 0.86);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    width: 60%;
+}
+
+button {
+    background: transparent;
+    color: black;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 30px;
+    border: 2px solid black;
+}
+
+button:hover {
+    background: black;
+    color: blue;
+}
+
+label{
+    margin: 10px;
+}
+
+/* form pagina eind */
+
+/* profile pagina */
+
+h1 {
+    margin-left: 5px;
+}
+
+h3 {
+    margin-left: 5px;
+}
+
+article {
+    box-shadow: 0 4px 8px 0 black;
+    max-width: 280px;
+    margin: auto;
+    text-align: center;
+}
+
+.naam {
+    color: grey;
+    padding-left: 10px;
+}
+
+.contact {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+/* footer */
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
 }
