@@ -47,21 +47,24 @@ nav img {
 /* form pagina */
 
 #voorkeur{
+    margin-top: 5px;
     padding-left: 10px;
 }
 
 .line{
     border-radius: 10px;
     margin-top: 5px;
+    margin-bottom: 10px;
     width: 80%;
     height: 3px;
     background-color: #000;
+
 }
 
 form {
     margin: auto;
     max-width: 95%;
-    box-shadow: 10px 5px 11px 3px rgba(0, 0, 0, 0.86);
+    box-shadow: 5px 5px 11px 3px rgba(0, 0, 0, 0.86);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,8 +144,18 @@ a:hover {
 
 .footer{
     position: fixed;
-    left: 0;
     bottom: 0;
+    right: 0;
     width: 100%;
+    text-align: center;
+}
 
+ul {
+    flex-direction: column;
+    padding: 0;
+}
+
+.footerli {
+    padding-bottom: 1px;
+    padding-top: 5px;
 }

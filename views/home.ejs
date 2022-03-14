@@ -14,23 +14,19 @@
 <body>
 <%- include('includes/header'); -%>
 
-  <br>
-
   <h3 id="voorkeur">Vul hier voorkeuren in voor klussers</h3>
 
   <div class="line"></div>
 
-  <br>
+<form action="profile" method="post">
 
-<form action="profile">
+  <label name="vak" for="vak"> Welk vakgebied: </label>
 
-  <label> Welk vakgebied: </label>
-
-  <input type="text" placeholder="Bijv: Schilder" required/>
+  <input name="vak" id="vak" type="text" placeholder="Bijv: Schilder" required/>
   
-  <label> Nationaliteit: </label>
+  <label for="nat" name="nat"> Nationaliteit: </label>
 
-  <input type="text" placeholder="Bijv: Duitsland" required/>
+  <input name="nat" id="nat" type="text" placeholder="Bijv: Duitsland" required/>
 
   <label> Gender: </label>
 
@@ -39,14 +35,25 @@
     <option value="geen">-</option>
     <option value="man">Man</option>
     <option value="vrouw">Vrouw</option>
-    <option value="Attackhelicopter">Attackhelicopter</option>
 
   </select>
 
-  <label> Hoe lang duurt de klus: </label>
+  <label name="hoelang" for="hoelang"> Hoe lang duurt de klus: </label>
 
-  <input type="text" placeholder="Bijv: 1 week ongeveer" required/>
+  <input name="hoelang" id="hoelang" type="text" placeholder="Bijv: 1 week ongeveer" required/>
 
+    <label> Aantal jaar ervaring: </label>
+
+   <select id="ervaring" required>
+
+    <option value="1-5">1-5 Jaar</option>
+    <option value="10">5-10 Jaar</option>
+    <option value="15">10-15 Jaar</option>
+    <option value="15+">15+ Jaar</option>
+
+
+  </select>
+  
   <button> zoeken </button>
 
 </form>
@@ -54,7 +61,5 @@
   <%- include('includes/footer'); -%>
     
 </body>
-
-<script src="dinges.js"></script>
 
 </html>
