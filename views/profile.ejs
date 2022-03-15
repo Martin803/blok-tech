@@ -14,14 +14,17 @@
 <h3>Hier zijn de klussers die aan jouw criteria voldoen</h3>
 
 <button class="filter">Filter</button>
+<% datavanform.forEach(function(formdata){ %>
 
 <article>
   <h1 id="naampersoon"></h1>
   <h3 id="gender"></h3>
   <p id="nationaal"></p>
-  <p id="vak"></p>
+    <h2><%= formdata.vak %></h2>
+    <h3><%= formdata.hoelang %></h3>
   <p><button class="contact">Bekijk profiel</button></p>
 </article>
+ <% }) %>
 
     <%- include('includes/footer'); -%>
     

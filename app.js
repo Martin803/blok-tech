@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 app.get('/', async (req, res) => {
 
-  const formdata = await db.collection('formdata').find({}).toArray();
+  const datavanform = await db.collection('formdata').find({}).toArray();
 
   res.render('profile')
 })
@@ -35,15 +35,15 @@ app.post('/profile', async (req, res) => {
     // TODO
     await db.collection('formdata').insertOne(form);
 
-    const formdata = await db.collection('formdata').findOne(query);
+    const datavanform = await db.collection('formdata').find().toArray();
+
+    const title = "formdata";
     
-    res.render('profile')
+    res.render('profile', {title, datavanform})
 });
 
 app.get('/profile', async (req, res) => {
-    const query = {_id: ObjectId("622f2a2312d4e2c45e47a19a")};
-    const profiles = await db.collection('formdata').findOne(query);
-
+    const profile = await db.collection('formdata').find().toArray();
     const title = "formdata";
     res.render('profile', {title, formdata});
 })
@@ -54,15 +54,6 @@ app.get('/edit', (req, res) => {
 })
 
 // Aan de hand van de totorial van Sonja
-
-app.get('/profile/:name', function (req, res) {
-  var data = {age: 29, job: 'ufopiloot'}
-res.render('profile', {person: req.params.name, data: data});
-})
-
-app.get('/profile', function (req, res) {
-res.render('profile')
-})
 
 app.get('/login', (req, res) => {
 res.send('login')
