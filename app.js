@@ -4,6 +4,7 @@ const port = 3000
 const dotenv = require('dotenv').config();
 const { MongoClient } = require('mongodb');
 const { ObjectId } = require('mongodb');
+const mongoose = require('mongoose');
 let db = null;
 
 console.log(process.env.TESTVAR)
@@ -20,7 +21,7 @@ app.get('/', (req, res) => {
 
 app.get('/', async (req, res) => {
 
-  const datavanform = await db.collection('formdata').find({}).toArray();
+  const profile = await db.collection('formdata').find({}).toArray();
 
   res.render('profile')
 })
@@ -35,18 +36,30 @@ app.post('/profile', async (req, res) => {
     // TODO
     await db.collection('formdata').insertOne(form);
 
-    const datavanform = await db.collection('formdata').find().toArray();
+    const profile = await db.collection('formdata').find().toArray();
 
     const title = "formdata";
     
-    res.render('profile', {title, datavanform})
+    res.render('profile', {title, profile})
 });
 
 app.get('/profile', async (req, res) => {
     const profile = await db.collection('formdata').find().toArray();
     const title = "formdata";
-    res.render('profile', {title, formdata});
+    res.render('profile', {title, profile});
 })
+
+app.post("/delete/:id",
+
+    async (req, res) => {
+
+    db.collection('formdata').deleteOne({
+
+    _id: ObjectId(req.params.id)})
+
+    res.redirect("/profile");
+
+});
 
 app.get('/edit', (req, res) => {
     const title = "Profile Editor";

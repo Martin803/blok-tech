@@ -12,16 +12,21 @@
 <h1>Kies een klusser</h1>
 
 <h3>Hier zijn de klussers die aan jouw criteria voldoen</h3>
+<div class="line"></div>
 
-<button class="filter">Filter</button>
-<% datavanform.forEach(function(formdata){ %>
+<% profile.forEach(function(formdata){ %>
 
 <article>
   <h1 id="naampersoon"></h1>
   <h3 id="gender"></h3>
   <p id="nationaal"></p>
     <h2><%= formdata.vak %></h2>
-    <h3><%= formdata.hoelang %></h3>
+    <h3>Spreekt: <%= formdata.nat %></h3>
+<form id="formverwijder" action="/delete/<%= formdata._id %>" method="POST">
+
+<button type="submit" id="buttonverwijder">Verwijder</button>
+
+</form>
   <p><button class="contact">Bekijk profiel</button></p>
 </article>
  <% }) %>

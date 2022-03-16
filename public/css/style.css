@@ -136,6 +136,14 @@ a {
     color: black;
 }
 
+#buttonverwijder {
+    margin: 0;
+}
+
+#formverwijder {
+    box-shadow: none;
+}
+
 button:hover,
 a:hover {
     opacity: 0.7;
