@@ -6,6 +6,7 @@ const dotenv = require('dotenv').config();
 const { MongoClient } = require('mongodb');
 const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser')
 let db = null;
 
 console.log(process.env.TESTVAR)
