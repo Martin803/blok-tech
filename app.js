@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 const express = require('express')
 const app = express()
 const port = 3000
@@ -49,6 +50,12 @@ app.get('/profile', async (req, res) => {
     res.render('profile', {title, profile});
 })
 
+app.get('/profile', async (req, res) => {
+    const formdata = await fetch("https://randomuser.me/api/?results=5&inc=name,gender,nat,registered")
+    const profile = await formdata.json();
+    res.render('profile', {profile: profile});
+})
+ 
 app.post("/delete/:id",
 
     async (req, res) => {
