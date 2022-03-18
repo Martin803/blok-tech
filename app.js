@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 4000;
 const dotenv = require('dotenv').config();
 const { MongoClient } = require('mongodb');
 const { ObjectId } = require('mongodb');
