@@ -17,10 +17,12 @@
     "camelcase": "^6.3.0",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.3",
     "mongodb": "^4.4.1",
     "mongoose": "^6.2.7",
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^2.6.7",
+    "express":"*",
+    "body-parser":"*",
+    "bcrypt": "^0.8.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
