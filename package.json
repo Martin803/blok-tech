@@ -2,7 +2,7 @@
   "name": "project-tech",
   "version": "1.0.0",
   "description": "This is a projecttech assignment",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "camelcase index.js",
     "precompress": "{{ executes BEFORE the `compress` script }}",
