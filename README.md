@@ -1,6 +1,5 @@
 <h1 align='center'>
-  <img src='![Color logo with background](https://user-images.githubusercontent.com/82580596/162051035-c44daa17-b62b-4a24-b923-ef4222239110.svg)
-' alt='klusserfind' height="75"/> <br>
+ Klusserfind
 </h1>
 <p align="center">
   Klussers koppelen aan mensen die een klusser nodig hebben. <br>
