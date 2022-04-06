@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 4000;
@@ -7,6 +6,7 @@ const { MongoClient } = require('mongodb');
 const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
+const compression = require('compression')
 let db = null;
 
 console.log(process.env.TESTVAR)
@@ -17,16 +17,18 @@ app.use(express.urlencoded({extended: true}));
 
 app.set('view engine', 'ejs')
 
+app.use(compression())
+
 app.get('/', (req, res) => {
   res.render('home')
 })
 
-app.get('/', async (req, res) => {
+// app.get('/', async (req, res) => {
 
-  const profile = await db.collection('formdata').find({}).toArray();
+//   const profile = await db.collection('formdata').find({}).toArray();
 
-  res.render('profile')
-})
+//   res.render('profile')
+// })
 
 app.post('/profile', async (req, res) => {
     // ADD MOVIE 
@@ -89,7 +91,7 @@ res.send('profielaanmaken')
 })
 
 app.get('*', function(req, res){
-  res.send('kutzooi pagina niet gevonden ERROR 404', 404);
+  res.send('pagina niet gevonden ERROR 404', 404);
 });
 
 app.listen(port, () => {
