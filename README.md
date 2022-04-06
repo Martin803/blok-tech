@@ -1,5 +1,5 @@
 <h1 align='center'>
-  <img src='![White logo - no background](https://user-images.githubusercontent.com/82580596/162050331-01f24b69-0abe-4d65-b467-ea7f7a165974.png)
+  <img src='(https://user-images.githubusercontent.com/82580596/162050331-01f24b69-0abe-4d65-b467-ea7f7a165974.png)
 ' alt='klusserfind' height="75"/> <br>
 </h1>
 <p align="center">
