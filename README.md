@@ -1,5 +1,6 @@
 <h1 align='center'>
-  <img src='https://i.imgur.com/r0X7eXT.png' alt='Pupples' height="75"/> <br>
+  <img src='![White logo - no background](https://user-images.githubusercontent.com/82580596/162050331-01f24b69-0abe-4d65-b467-ea7f7a165974.png)
+' alt='klusserfind' height="75"/> <br>
 </h1>
 <p align="center">
   Klussers koppelen aan mensen die een klusser nodig hebben. <br>
@@ -48,8 +49,8 @@ komt nog
 ## License 📄
 De license die gebruikt is bij dit project is: Apache Licence 2.0. <a href="https://github.com/Martin803/blok-tech/blob/main/LICENSE"> Meer info </a> 
 
-## Contributors 🙏🏼
+## Gemaakt door:
 
 <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/82580596?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Martin Schaapherder" height="120">
 
-[ [Martin Schaapherder](https://github.com/Martin803) 
+[Martin Schaapherder](https://github.com/Martin803) 
