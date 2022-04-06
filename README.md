@@ -43,7 +43,7 @@ nodemon app.js
 ``` 
 
 ## Code of Conduct 👮🏽
-komt nog
+<a href="https://github.com/Martin803/blok-tech/blob/main/CODE_OF_CONDUCT.md"> Meer info </a>
 
 ## License 📄
 De license die gebruikt is bij dit project is: Apache Licence 2.0. <a href="https://github.com/Martin803/blok-tech/blob/main/LICENSE"> Meer info </a> 
