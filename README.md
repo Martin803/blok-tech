@@ -12,13 +12,6 @@
 Mijn concept is een app die bouwvakker/werklui matcht aan mensen die iets gebouwd moeten hebben. De mensen die een klus nodig hebben vullen eerst een vragenlijst in met voorkeuren en dan krijgen ze een lijst te zien met klussers die bij hun passen.
 
 ## Installatie  🛠
-Dit heb je nodig:
-
-* Node.js
-* Npm
-* Express
-* MongoDB Atlas en MongoDB Compass
-* Ejs
 
 **Step 1:** Clone de repo:
 
