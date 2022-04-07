@@ -30,8 +30,7 @@ app.get('/', (req, res) => {
 //   res.render('profile')
 // })
 
-app.post('/profile', async (req, res) => {
-    // ADD MOVIE 
+app.post('/profile', async (req, res) => { 
     let form = {
         vak: req.body.vak, 
         nat: req.body.nat, 
@@ -50,11 +49,11 @@ app.post('/profile', async (req, res) => {
 app.get('/profile', async (req, res) => {
     const profile = await db.collection('formdata').find().toArray();
     const title = "formdata";
-    res.render('profile', {title, profile});
-})
+    res.render('profile', {title, profile})
+});
 
 app.get('/profile', async (req, res) => {
-    const formdata = await fetch("https://randomuser.me/api/?results=5&inc=name,gender,nat,registered")
+    const formdata = await fetch("https://randomuser.me/api/?results=5&inc=name,gender,nat,registered");
     const profile = await formdata.json();
     res.render('profile', {profile: profile});
 })
